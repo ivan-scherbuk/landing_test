@@ -1,0 +1,49 @@
+@import '../../_constants.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    row-gap: 22px;
+    z-index: 1;
+
+    @media (max-width: $smallDesktopWidth) {
+        padding: 105px 27px 27px;
+    }
+}
+
+.header {
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 74px;
+    max-width: 700px;
+
+    &__medium {
+        max-width: 300px;
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    @media (max-width: $smallDesktopWidth) {
+        max-width: 270px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.content {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+    flex: 1;
+
+    &__medium {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    @media (max-width: $smallDesktopWidth) {
+        font-size: 14px; // it should be 16px but doesn't fit in one line for "dreams" card, so from visual point it more looks like it should have 14px
+        line-height: 19.2px;
+    }
+}

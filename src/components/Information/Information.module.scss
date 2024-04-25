@@ -1,0 +1,76 @@
+@import '../../_constants.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    row-gap: 17px;
+
+    @media (max-width: $smallDesktopWidth) {
+        margin-top: 55px;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        margin-top: 50px;
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+
+    @media (max-width: $smallDesktopWidth) {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.6;
+
+    @media (max-width: $smallDesktopWidth) {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+}
+
+.button {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    color: $yellow;
+    border: none;
+    padding: 0;
+    width: fit-content;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    @media (max-width: $smallDesktopWidth) {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+}

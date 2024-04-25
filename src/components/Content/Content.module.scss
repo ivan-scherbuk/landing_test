@@ -1,0 +1,110 @@
+@import '../../_constants.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px $paddingLarge;
+    background: linear-gradient(196.2deg, #0d1e48 0%, #304571 100%);
+
+    @media (max-width: $smallDesktopWidth) {
+        padding: 55px $paddingMedium;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        padding: 50px $paddingSmall;
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+
+    @media (max-width: $smallDesktopWidth) {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
+
+.offers {
+    display: grid;
+    gap: 40px;
+    grid-template-areas:
+        'a a'
+        'b c'
+        'd d';
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+
+    @media (max-width: $smallDesktopWidth) {
+        grid-template-areas:
+            'a b'
+            'c d';
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    @media (max-width: $mobileLargeWidth) {
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd';
+        grid-template-columns: auto;
+    }
+}
+
+.offer {
+    position: relative;
+    display: flex;
+
+    &::before {
+        content: '';
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.6;
+    }
+
+    &__borders {
+        grid-area: a;
+
+        &::before {
+            background-image: url('../../assets/offer_borders.png');
+        }
+    }
+
+    &__space {
+        grid-area: b;
+        width: 100%;
+
+        &::before {
+            background-image: url('../../assets/offer_space.png');
+        }
+    }
+
+    &__stars {
+        grid-area: c;
+
+        &::before {
+            background-image: url('../../assets/offer_stars.png');
+        }
+    }
+
+    &__dreams {
+        grid-area: d;
+
+        &::before {
+            background-image: url('../../assets/offer_dreams.png');
+        }
+    }
+}
