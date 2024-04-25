@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5ebfb449.css",
+    "main.js": "/static/js/main.23700e66.js",
+    "static/media/background_preview.png": "/static/media/background_preview.4aab6891aa0154909619.png",
+    "static/media/offer_dreams.png": "/static/media/offer_dreams.dcea2b366f3982bdbb8b.png",
+    "static/media/offer_stars.png": "/static/media/offer_stars.dae50181d9f72d40efbf.png",
+    "static/media/offer_borders.png": "/static/media/offer_borders.b09ac482375bd4b39062.png",
+    "static/media/rocket.svg": "/static/media/rocket.a4389852c90b9d43571cac86eea0e8ab.svg",
+    "static/media/offer_space.png": "/static/media/offer_space.b1b7a435ca7e20bec12a.png",
+    "static/media/earth.png": "/static/media/earth.c38884f6b893c482e24a.png",
+    "static/media/header_logo.svg": "/static/media/header_logo.f4153131d3955bdfa609912a9f3b5caf.svg",
+    "static/media/cartHover.svg": "/static/media/cartHover.8036edbf3ace76cf8965b1ac607c9ab3.svg",
+    "static/media/cart.svg": "/static/media/cart.af35fcbb0fb97406ba612fade8784d0f.svg",
+    "static/media/burger.svg": "/static/media/burger.7e65dcdbfcb4fb7f60ea90f61a0ab5f8.svg",
+    "static/media/closeIcon.svg": "/static/media/closeIcon.60d4f41347544050a7b9d2915be4e499.svg",
+    "index.html": "/index.html",
+    "main.5ebfb449.css.map": "/static/css/main.5ebfb449.css.map",
+    "main.23700e66.js.map": "/static/js/main.23700e66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ebfb449.css",
+    "static/js/main.23700e66.js"
+  ]
+}
